@@ -5,8 +5,17 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ScheduleSendTwoToneIcon from '@mui/icons-material/ScheduleSendTwoTone';
 
 const Formbox = () => {
-  const [travelForm,setTravelForm]= useState();
-
+  const [travelForm,setTravelForm]= useState({});
+  
+  const handleChange= (e)=>{
+    let field=e.target;
+    setTravelForm({...travelForm,[field.name]:field.value});
+  }
+  const handleSubmit= (e)=>{
+    e.preventDefault();
+    console.log(travelForm);
+    localStorage.setItem("travel",JSON.stringify(travelForm));
+  }
 
   return (
     <div className={styles.formbox}>
@@ -14,29 +23,29 @@ const Formbox = () => {
         <SideSelect/><br />
       </div>
       <div className={styles.form}>
-        <form action="">
+        <form onSubmit={handleSubmit}>
           <div className={styles.upperform}>
              <div className={styles.inputbox1}>
                <LocationOnIcon/>
                <p>Going to</p>
-               <input type="text" name="going" />
+               <input type="text" name="going" onChange={handleChange}/>
              </div>
              <div className={styles.datebox1}>
                <p style={{marginLeft:"5px"}}>Check-in&nbsp;&nbsp;</p>
                <ScheduleSendTwoToneIcon/> 
-               <input type="date" name="checkin"/>
+               <input type="date" name="checkin" onChange={handleChange}/>
              </div>
              <div className={styles.datebox1}>
                <p style={{marginLeft:"5px"}}>Check-out&nbsp;</p>
                <ScheduleSendTwoToneIcon/> 
-               <input type="date" name="checkout" />
+               <input type="date" name="checkout" onChange={handleChange} />
              </div>
           </div>
           <div className={styles.lowerform}>
              <div className={styles.inputbox1}>
                <LocationOnIcon/>
                <p>Leaving From</p>
-               <input type="text" name="leaving" />
+               <input type="text" name="leaving" onChange={handleChange} />
              </div>
           </div>
           <div className={styles.submitform}>
