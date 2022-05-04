@@ -27,16 +27,7 @@
     box-sizing: border-box;
     padding: 30px;
 }
-.formbox{
-    background-color: white;
-    border-radius: 10px;
-    width: 80%;
-    height: 330px;
-    display: flex;
-    margin: auto;
-    
-    
-}
+
 .smallslider2{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -225,4 +216,104 @@
 }
 .destination>div>div{
     margin: 10px;
+}
+.footer{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap:80px;
+    width: 90%;
+    margin: auto;
+    border-bottom: 2px solid grey;
+    box-sizing: border-box;
+}
+.footer>div>img{
+    margin-top: 20px;
+}
+.footer>div>p{
+    color: #0a438b;
+
+}
+.footer>div>p:hover{
+    text-decoration: underline;
+}
+
+
+.formbox{
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    height: 330px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0px 50px;
+}
+
+
+.upperform{
+    display:grid;
+    gap:20px;
+    width:100%;
+    grid-template-columns: 45% 25% 25%;
+    justify-content: space-around;
+   
+}
+.inputbox1{
+    border:1px solid grey;
+    border-radius: 8px;
+    display: flex;
+    gap:13px;
+    align-items: center;
+}
+.inputbox1:hover,.datebox1:hover{
+ border:1px solid #0a438b;
+}
+.inputbox1>input{
+    width: 60%;
+    height: 96%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+.datebox1{
+    border:1px solid grey;
+    border-radius: 8px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    box-sizing: border-box;
+}
+.datebox1>input{
+    /* padding: 15px; */
+    font-family: monospace;
+    font-size: 18px;
+    border: none;
+    outline:none;border-radius: 5px;
+}
+
+::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.lowerform{
+    display: grid;
+    grid-template-columns: 45% 40%;
+    width:100%;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.submitform{
+    text-align: center;
+    margin-top: 40px;
+}
+.submitform>input{
+    color:White;
+    border:none;
+    background-color: #0a438b;
+    border-radius: 8px;
+    padding: 1.3% 5%;
+    font-weight: 600;
+    font-size: 17px;
 }

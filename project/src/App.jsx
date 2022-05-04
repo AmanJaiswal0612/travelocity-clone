@@ -3,6 +3,7 @@ import './App.css';
 import BigGrid from './components/BigGrid';
 import Destination from './components/Destination';
 import FeatureOffer from './components/FeatureOffer';
+import Fotter from './components/Fotter';
 import ImageForm from './components/ImageForm';
 import Navbar from './components/Navbar';
 import Scanner from './components/Scanner';
@@ -22,6 +23,7 @@ function App() {
       <Video/>
       <Scanner/>
       <Destination/>
+      <Fotter/>
     </div>
   );
 }

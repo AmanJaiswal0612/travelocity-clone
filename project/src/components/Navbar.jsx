@@ -1,4 +1,5 @@
 import React from 'react'
+import DropDownNav from './DropDownNav'
 import styles from "./Navbar.module.css"
 
 
@@ -7,9 +8,7 @@ const Navbar = () => {
     <div className={styles.navcontainer}>
        <div className={styles.iconbox}>
            <img src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&siteid=80001&2" alt="" />
-           <select name="" id="">
-               <option value="">More trvel</option>
-           </select>
+           <DropDownNav/>
        </div>
        <div className={styles.navlinks}>
        <h4>Espariol</h4>
