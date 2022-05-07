@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "./payment.module.css"
+import { FaLock,FaUserAlt } from 'react-icons/fa';
 
 function Payment() {
   return (
@@ -10,7 +11,7 @@ function Payment() {
     <div>
       <div className={styles.first_div}>
           
-          <div style={{marginRight:"20px"}}>icon</div>
+          <div style={{marginRight:"20px"}}><FaLock /></div>
           <div>
                 <div className={styles.first_div1}>Signed in as </div>
                 <div className={styles.first_div2}>Sachinsmp78@gmail.com </div>
@@ -19,7 +20,7 @@ function Payment() {
       </div>
       <div className={styles.second_div}>
           <div className={styles.second_div1}> 
-               {/* contact  font awesome */} con
+               {/* contact  font awesome */} <FaUserAlt />
           </div>
           <div className={styles.second_div1}>
        
@@ -28,14 +29,14 @@ function Payment() {
                 <span>Smoking </span>
           
                 <div className={styles.freebies_container}>
-                            <div class="display-freebies">
-                                    <span class="icon icon-success" aria-hidden="true"></span>        <span className={styles.freebies_text}>Breakfast included</span>
+                            <div >
+                                         <span className={styles.freebies_text}>Breakfast included</span>
                             </div>
-                            <div class="display-freebies">
-                                   <span class="icon icon-success" aria-hidden="true"></span>        <span className={styles.freebies_text}>Free parking</span>
+                            <div >
+                                        <span className={styles.freebies_text}>Free parking</span>
                             </div>
-                            <div class="display-freebies">
-                                    <span class="icon icon-success" aria-hidden="true"></span>        <span className={styles.freebies_text}>Free internet</span>
+                            <div>
+                                      <span className={styles.freebies_text}>Free internet</span>
                             </div>
                     </div>
                         <div >
@@ -51,7 +52,7 @@ function Payment() {
       </div>
                  <div className={styles.third_div}>     
                       <div className={styles.details}>
-                          <span>icon shield</span>
+                          <span><Fa /></span>
                           <h2 style={{fontSize:"20px" , marginTop:"5px" , marginBottom:"5px"}}>Protect your hotel</h2>
                           <span>Recommended</span>
                       </div>
